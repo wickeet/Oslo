@@ -5,7 +5,7 @@ Programo mi propio ajedrez
 
 ## Metas:
 1. Implementar las reglas básicas del ajedrez.
-- [ ] Implementar el movimiento de las piezas.
+- [X] Implementar el movimiento de las piezas.
 - [ ] Implementar comer una pieza.
 - [ ] Implementar el enroque y el jaque mate.
 2. Crear una interfaz gráfica para el juego.
