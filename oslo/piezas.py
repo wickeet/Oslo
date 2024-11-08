@@ -1,3 +1,5 @@
+from oslo.tablero import Tablero
+
 class Pieza:
     def __init__(self, color, posicion):
         self.color = color
@@ -5,6 +7,9 @@ class Pieza:
 
     def mover(self, nueva_posicion):
         self.posicion = nueva_posicion
+
+    def movimientos_posibles(self, tablero):
+        pass
 
     def __str__(self):
         return f"Pieza de color {self.color} en la posición {self.posicion}"
@@ -209,6 +214,7 @@ class Reina(Pieza):
 class Rey(Pieza):
     def __init__(self, color, posicion):
         super().__init__(color, posicion)
+        self.movida = False
 
     def mover(self, nueva_posicion):
         super().mover(nueva_posicion)
